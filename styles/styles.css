@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body:not(header) {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+#banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 260px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(/resources/banner.png);
+    background-position: center bottom;
+    background-size: cover;
+}
+
+nav {
+    display: flex;
+    background-color: rgb(50, 35, 50);
+    width: 100%;
+    height: 50px;
+    align-items: center;
+}
+
+#allNavItems {
+    display: flex;
+    width: 100%;
+    padding: 0 50px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#mainMenu {
+    position: relative;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+}
+
+.navItems {
+    font-family: 'Alice', serif;
+    color: white;
+    font-size: 16pt;
+    text-decoration: none;
+}
+
+#subMenu {
+    display: none;
+    position: absolute;
+    z-index: 10;
+    background-color: rgb(133, 85, 133);
+    min-width: 200px;
+    left: -20px;
+    list-style-type: none;
+}
+
+#subMenu li a {
+    display: block;
+    padding: 15px;
+    font-size: 14pt;
+    color: white;
+    text-decoration: none;
+    border-top: 1px solid rgb(50, 35, 50);
+}
+
+#subMenu li a:hover {
+    background-color: rgb(50, 35, 50);
+}
+
+#mainMenu:hover #subMenu{
+    display: block;
+}
+
+#breadcrumbs > a {
+    position: absolute;
+    top: 320px;
+    left: 10px;
+    color: black;
+    text-decoration: none;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 300px;
+    background-color: rgb(50, 35, 50);
+    box-sizing: border-box;
+    padding: 50px;
+    columns: 2;
+}
+
+.text {
+    color: white;
+    font-size: 12pt;
+}
+
+#footerLeft, #footerRigth {
+    border: 1px solid white ;
+    height: 198px;
+}
