@@ -6,6 +6,8 @@
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Alice&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lustria&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
@@ -20,11 +22,10 @@
                     <ul id="subMenu">
                         <li><a href="/">Wine-making</a></li>
                         <li><a href="/">Grape-growing</a></li>
-                        <li><a href="/">BlaBlaBlaBla</a></li>
+                        <li><a href="/">Tastings</a></li>
                     </ul>
                 </div>
                 <a class="navItems" href="/">NEWS</a>
-                <a class="navItems" href="/">FAQ</a>
                 <a class="navItems" href="/">ABOUT US</a>
             </div>
         </nav>
@@ -32,13 +33,48 @@
     <div id="breadcrumbs">
         <a href="/">/Home/</a>
     </div>
-    <footer>
-        <div id="footerLeft" class="text">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci dolorum accusamus distinctio, recusandae dolorem non est aperiam doloremque perferendis eveniet, ipsum repellendus omnis placeat aspernatur eaque dignissimos. Obcaecati, corporis repellendus.
+    <div class="centerGrid">
+        <div class="grid-cards">
+            <div class="cards-col1">
+                <img src="/resources/terroir.png" alt="Terroir">
+            </div>
+            <div class="cards-col3">
+                <picture>
+                    <source media="(min-width: 820px)" srcset="/resources/wine-making-landing.png" alt="Wine making and land tips">
+                    <img src="/resources/wine-making-landing-small.png" alt="Wine making and land tips">
+                </picture>
+            </div>
+            <div class="cards-col4">
+                <picture>
+                    <source media="(min-width: 820px)" srcset="/resources/tasting-card.png" alt="Tasting invitation">
+                    <img src="/resources/tasting-card-small.png" alt="Tasting invitation">
+                </picture>
+                <p>Wine Life invites you</p>
+                <h1>Wine<br>Tasting Night</h1>
+                <p>RESERVATIONS:<br>TASTING@WINELIFE.COM</p>
+            </div>
+            <div class="cards-col5">
+                <img src="/resources/red-wine.png" alt="Red wines recommendation">
+            </div>
+            <div class="cards-col6">
+                <img src="/resources/white-wine.png" alt="White wines recommendation">
+            </div>
+            <div class="cards-col7">
+                <img src="/resources/clo-vougeot.png" alt="Visit Clo de Vougeot">
+            </div>
         </div>
-        <div id="footerRigth" class="text">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat commodi hic sunt quisquam cumque consequatur dolores, qui voluptatem. Corrupti dolorum consectetur totam nesciunt obcaecati non fugiat beatae iure vitae maxime.
-        </div>
-    </footer>
+    </div>
 </body>
+<footer>
+    <div id="footerLeft" class="text">
+        <ul>
+            <li><a href="/">Wine-making</a></li>
+            <li><a href="/">Grape-growing</a></li>
+            <li><a href="/">Tastings</a></li>
+        </ul>
+    </div>
+    <div id="footerRigth" class="text">
+        Wine Life, the website made for wine lovers, from wine lovers, is a british magazine focused on curating for the people that are involved in the wine world, being final consumers or viticulturists.
+    </div>
+</footer>
 </html>
