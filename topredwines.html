@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/jpg" sizes="16x16" href="resources/favicon.png">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/grid.css">
+    <link rel="stylesheet" href="styles/story.css">
+    <link rel="stylesheet" href="styles/imagegallery.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Alice&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lustria&display=swap" rel="stylesheet">
+    <title>Wine Life</title>
+</head>
+<body>
+    <header>
+        <div id="banner" alt="Page banner">
+            <img src="resources/logo.svg" alt="Logo">
+        </div>
+    </header>
+    <nav>
+        <div id="allNavItems">
+            <div id="mainMenu">
+                <a class="navItems" href="/">HOME ▼</a>
+                <ul id="subMenu">
+                    <li><a href="/story2.html">Wine-making</a></li>
+                    <li><a href="/story1.html">Grape-growing</a></li>
+                    <li><a href="/">Tastings</a></li>
+                </ul>
+            </div>
+            <a class="navItems" href="/news.html">NEWS</a>
+            <a class="navItems" href="/aboutus.html">ABOUT US</a>
+        </div>
+    </nav>
+    <div id="breadcrumbs">
+        <a href="/">/Home/</a>
+    </div>
+    <div class="wrapperStory">
+        <div class="headline">
+            <div class="title">
+                <h1>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet, eaque! Magnam nihil eligendi obcaecati velit.</h1>
+            </div>
+            <div class="subtitle">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo eligendi necessitatibus illo, omnis impedit sit earum fugiat cumque. Dignissimos provident ullam voluptatum illum quaerat esse numquam libero, adipisci id quasi.</p>
+            </div>
+        </div>
+    
+        <!-- From tutorial on W3Schools - https://www.w3schools.com/howto/howto_js_slideshow.asp -->
+        
+        <div class="gallery-container">
+            <div class="gallery animation">
+                <img src="/resources/news/plant.png" alt="">
+            </div>
+            <div class="gallery animation">
+                <img src="/resources/tasting-card.png" alt="">
+            </div>
+            <div class="gallery animation">
+                <img src="/resources/news/plant.png" alt="">
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <div class="dot-box">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+
+        <div class="top">
+            <h1>1. Blablabla</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque temporibus repellendus a, voluptatum quis id assumenda iusto, blanditiis adipisci, velit ipsum neque reprehenderit autem officiis odio dolor animi rerum ab.
+            Nisi vitae ipsa est iste nam soluta optio culpa autem fuga at quaerat rem, officiis voluptate cum adipisci provident totam asperiores cupiditate quisquam. Voluptatum fuga illo sequi consectetur ab quia.</p><br>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore voluptas minima ratione labore ullam exercitationem eum doloremque quibusdam vitae doloribus harum consequatur velit alias assumenda, cum sint facere. Quaerat, dicta.</p>
+        </div>
+        <div class="top">
+            <h1>2. Blablabla</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni ea animi cumque quibusdam aliquid, unde ducimus accusantium nobis similique sunt laborum natus adipisci repellat deleniti. Consequatur, reiciendis dolore? Iusto, possimus?
+            Ex mollitia earum magni. Ullam voluptas quia omnis nisi facere tenetur vero necessitatibus eius? Debitis ab eius libero perferendis facilis labore quia inventore molestiae doloribus tempora? Harum repudiandae amet voluptate!</p><br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati ullam, quisquam voluptatibus facere tenetur vel neque aliquam culpa repellendus laborum unde nulla labore quas fuga sunt reprehenderit dolore molestias. Accusamus.</p>
+        </div>
+        <div class="top">
+            <h1>3. Blablabla</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor exercitationem sed labore, veniam accusantium cupiditate vero enim similique officiis ratione culpa omnis nam ipsa incidunt, earum voluptates! Excepturi, sunt! Corrupti?
+            Unde aspernatur impedit voluptates molestiae dolores, suscipit iusto culpa animi sequi doloremque inventore numquam iure veritatis eaque alias cupiditate repudiandae tempora quaerat, assumenda minima! Officia corrupti fuga similique eligendi repellat.</p><br>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda doloremque, possimus iste suscipit quis ipsum nisi nesciunt at ex? Dignissimos culpa exercitationem veniam porro vero magnam nam odit iste inventore?</p>
+        </div>
+    </div>
+
+</body>
+<footer>
+    <div id="footerLeft" class="text">
+        <ul>
+            <li><a href="/story2.html">Wine-making</a></li>
+            <li><a href="/story1.html">Grape-growing</a></li>
+            <li><a href="/">Tastings</a></li>
+        </ul>
+    </div>
+    <div id="footerRigth" class="text">
+        <p>Wine Life, the website made for wine lovers, from wine lovers, is a british magazine focused on curating for the people that are involved in the wine world, being final consumers or viticulturists.</p>
+    </div>
+</footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="/scripts/script.js"></script>
+<script src="/scripts/imagegallery.js"></script>
+</html>

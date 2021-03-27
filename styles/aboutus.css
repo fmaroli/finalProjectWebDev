@@ -1,0 +1,69 @@
+.boxStory {
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    margin: 4rem;
+    border-radius: 20px;
+    background-color: lightslategray;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+.boxStory h1 {
+    font-size: 5rem;
+    padding: 2rem;
+    margin: auto;
+    grid-column: 1 / 2;
+}
+.boxStory hr {
+    background-color: black;
+    height: 0.5rem;
+    margin: auto;
+    width: 90%;
+    grid-column: 1 / 2;
+}
+.ourStory {
+    grid-column: 1 / 2;
+    text-align: justify;
+    margin: 2rem;
+}
+.heroImg {
+    grid-column: 2 / 3;
+    grid-row: 1 / 4;
+    margin: 1.5rem;
+    border-radius: 10px;
+    background-image: url("/resources/news/plant.png");
+    background-position: center;
+}
+
+@media only screen and (max-width: 820px){
+    .boxStory {
+        margin: 2.5rem;
+    }
+    .boxStory h1 {
+        font-size: 3rem;
+    }
+}
+@media only screen and (max-width: 600px){
+    .boxStory {
+        grid-template-rows: 4rem 1rem 2fr 1.3fr;
+        margin: 2.5rem 1rem;
+    }
+    .boxStory h1 {
+        font-size: 2rem;
+        grid-column: 1 / 3;
+        padding: unset;
+    }
+    .boxStory hr {
+        grid-column: 1 / 3;
+        grid-row: 2 / 3;
+    }
+    .ourStory {
+        grid-column: 1 / 3;
+        grid-row: 3 / 4;
+        text-align: left;
+        margin: 2rem 2rem 0.5rem 1rem;
+    }
+    .heroImg {
+        grid-column: 1 / 3;
+        grid-row: 4 / 5;
+        margin: 0.5rem;
+    }
+}

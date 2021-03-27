@@ -9,7 +9,7 @@ html {
 }
 
 body:not(header) {
-    background-color: rgba(0, 0, 0, .8);
+    background-color: rgba(50, 60, 80, 1);
 }
 
 #banner {
@@ -31,12 +31,16 @@ body:not(header) {
 }
 
 nav {
+    position: sticky;
+    top: 0;
+
     display: flex;
     background-color: rgb(50, 35, 50);
     width: 100%;
     min-width: 285px; 
     height: 50px;
     align-items: center;
+    z-index: 100;
 }
 
 #allNavItems {
@@ -110,7 +114,7 @@ footer {
     background-color: rgb(50, 35, 50);
     box-sizing: border-box;
     padding: 35px 20%;
-    margin: 0;
+    margin: 3rem 0 0 0;
     display: grid;
     grid-template-columns: 30% 70%;
 }

@@ -1,0 +1,128 @@
+.wrapperStory {
+    padding: 4rem 0 0 0;
+    position: relative;
+    margin: auto;
+    max-width: 90rem;
+}
+.headline {
+    max-width: 68.75rem;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    color: white;
+}
+.title h1{
+    font-size: 2.5rem;
+}
+.subtitle p{
+    padding: 1rem 0;
+    font-size: 1rem;
+}
+.storyBody {
+    max-width: 68.75rem;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    color: white;
+}
+.imgCredit {
+    color: teal;
+    padding: 0.5rem 0;
+}
+.storyArticle {
+    margin: 0 auto;
+    max-width: 45rem;
+}
+.storyArticle .parag {
+    padding: 1rem 0;
+    line-height: 1.5rem;
+}
+.storyHighlight {
+    padding-left: 1rem;
+    font-weight: 1000;
+    font-size: 1.5rem;
+    border-left: 0.5rem solid red;
+}
+.storyBody hr {
+    margin: auto;
+}
+/* GRID READ MORE */
+.readMore {
+    text-align: center;
+}
+.readMore h1{
+    font-size: 2.5rem;
+    margin: 1rem 0;
+    color: white;
+}
+.readMoreGrid {
+    margin: 1rem 0;
+    display: grid;
+    column-gap: 1rem;
+    grid-template-columns: 21.875rem 21.875rem;
+    grid-template-rows: 28.125rem;
+}
+#grid-firstSug {
+    grid-column: 1 / 2;
+}
+#grid-secondSug {
+    grid-column: 2 / 3;
+}
+
+@media only screen and (max-width: 1530px){
+    .wrapperStory {
+        margin:0 2rem;
+    }
+    .heroStory {
+        width: 71vw;
+    }
+}
+@media only screen and (max-width: 1200px){
+    .title h1{
+        width: 90vw;
+        font-size: 1.5rem;
+    }
+    .heroStory {
+        width: 90vw;
+    }
+}
+@media only screen and (max-width: 800px){
+    .readMoreGrid {
+        margin: auto;
+        grid-template-columns: 1fr 21.875rem 1fr;
+        grid-template-rows: 28.125rem 28.125rem;
+        gap: 1rem;
+    }
+    #grid-firstSug {
+        grid-column: 2 / 3;
+    }
+    #grid-secondSug {
+        grid-column: 2 / 3;
+    }
+}
+@media only screen and (max-width: 660px){
+    .heroStory {
+        width: 85vw;
+    }
+    .title h1{
+        width: 90vw;
+        font-size: 1.2rem;
+    }
+    .subtitle p{
+        padding: 1rem 0;
+        font-size: 0.9rem;
+    }
+    .imgCredit {
+        font-size: 0.625rem;
+    }
+}
+@media only screen and (max-width: 440px){
+    .readMoreGrid {
+        margin: auto;
+        grid-template-columns: 1fr;
+        grid-template-rows: 28.125rem 28.125rem;
+        gap: 1rem;
+    }
+    #grid-firstSug {
+        grid-column: 1 / 2;
+    }
+    #grid-secondSug {
+        grid-column: 1 / 2;
+    }
+}

@@ -1,0 +1,72 @@
+* {
+    box-sizing: border-box;
+}
+.gallery-container {
+    max-width: 90vw;
+    position: relative;
+    margin: 1rem auto 1rem auto;
+}
+.gallery {
+    display: none;
+}
+.top {
+    display: none;
+}
+.gallery img {
+    width: 100%;
+    height: 53vh;
+}
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -1.2rem;
+    padding: 1rem;
+    color: white;
+    transition: 0.6s ease;
+    user-select: none;
+}
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+.dot-box {
+    text-align:center;
+}
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #727272;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+.active, .dot:hover {
+    background-color: rgb(236, 45, 45);
+}
+.animation {
+    animation-name: animation;
+    animation-duration: 1.5s;
+}
+/* STORY */
+.top {
+    margin: 0 0 0 2rem;
+    color: white;
+}
+.top h1 {
+    font-size: 2.5rem;
+}
+.top p {
+    width: 70vw;
+    font-size: 1.2rem;
+}
+/**/
+@keyframes animation {
+    from {opacity: .4}
+    to {opacity: 1}
+}
