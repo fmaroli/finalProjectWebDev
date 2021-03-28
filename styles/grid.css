@@ -1,3 +1,11 @@
+/*
+***
+* Grid used in the landing page
+***
+* This page uses a grid-template-area to position all the cards, there are three different configurations for
+* different sized screens. Here image sizes, text for the cards and some hover effects are controlled.
+***
+*/
 .centerGrid {
     display: flex;
     width: 100%;
@@ -105,7 +113,7 @@
     text-align: right;
     pointer-events: none;
 }
-
+/*Laptop sized view*/
 @media only screen and (max-width: 1150px){
     .grid-cards {
         padding: 50px 0;
@@ -147,7 +155,7 @@
         text-align: right;
     }
 }
-
+/*Tablet and smaller until phone*/
 @media only screen and (max-width: 820px){
     .grid-cards {
         padding: 50px 0;

@@ -1,17 +1,24 @@
+/* 
+*  CSS TABLE OF CONTENTS
+*   
+*  1 - Global
+*  2 - Banner
+*  3 - Nav
+*  4 - Body
+*  5 - Footer
+*
+*/
+/*** 1 - Global ***/
 * {
     margin: 0;
     padding: 0;
     font-size: 1rem;
 }
-
 html {
     height: 100%;
 }
-
-body:not(header) {
-    background-color: rgba(50, 60, 80, 1);
-}
-
+/*** 2 - Banner ***/
+/* Set banner positioning, size, image and colour */
 #banner {
     display: flex;
     justify-content: center;
@@ -23,13 +30,17 @@ body:not(header) {
     background-position: center bottom;
     background-size: cover;
 }
-
-#banner img {
+#banner img { /* Logo */
     max-width: 500px;
     min-width: 280px;
     padding: 30px;
 }
-
+/*** 3 - Nav ***/
+/*
+ * Sets navbar to be stuck to the top of the page at all times
+ * There is also some control for when mouse is hovering an element
+ * for example, the menu will only appear when hovering submenu
+*/
 nav {
     position: sticky;
     top: 0;
@@ -42,7 +53,6 @@ nav {
     align-items: center;
     z-index: 100;
 }
-
 #allNavItems {
     display: flex;
     width: 100%;
@@ -50,21 +60,18 @@ nav {
     justify-content: space-between;
     align-items: center;
 }
-
 #mainMenu {
     position: relative;
     display: inline-block;
     justify-content: center;
     align-items: center;
 }
-
 .navItems {
     font-family: 'Alice', serif;
     color: white;
     font-size: 1.375rem;
     text-decoration: none;
 }
-
 #subMenu {
     display: none;
     position: absolute;
@@ -74,7 +81,6 @@ nav {
     left: -10px;
     list-style-type: none;
 }
-
 #subMenu li a {
     display: block;
     padding: 15px;
@@ -83,15 +89,17 @@ nav {
     text-decoration: none;
     border-top: 1px solid rgb(50, 35, 50);
 }
-
 #subMenu li a:hover {
     background-color: rgb(50, 35, 50);
 }
-
 #mainMenu:hover #subMenu{
     display: block;
 }
-
+/*** 4 - Body ***/
+/*This will only set background colour, mainly each page have their own CSS for the body*/
+body:not(header) {
+    background-color: rgba(50, 60, 80, 1);
+}
 #breadcrumbs > a {
     position: absolute;
     top: 320px;
@@ -99,7 +107,6 @@ nav {
     color: black;
     text-decoration: none;
 }
-
 .button {
     width: fit-content;
     color: #ffffff;
@@ -109,6 +116,8 @@ nav {
     padding: 1rem 3rem;
     cursor: pointer;
 }
+/*** 5 - Footer ***/
+/*Grid layout, holds two elements that are positioned in the container */
 footer {
     width: 100%;
     background-color: rgb(50, 35, 50);
@@ -118,7 +127,6 @@ footer {
     display: grid;
     grid-template-columns: 30% 70%;
 }
-
 .text, .text ul, .text ul li a {
     color: #ffffff;
     font-size: 1.2rem;
@@ -126,16 +134,15 @@ footer {
     list-style-type: none;
     padding: 3px;
 }
-
 #footerRigth {
     font-size: 1.2rem;
     text-align: justify;
 }
-
 #footerLeft {
     word-wrap: break-word;
 }
-
+/*Tablet and phone*/
+/*Changes grid layout to one column and 2 rows on the footer*/
 @media only screen and (max-width: 820px){
     footer {
         padding: 30px 10%;

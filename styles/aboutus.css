@@ -1,3 +1,12 @@
+/*
+***
+* ABOUT US - Grid
+***
+* This page is a grid, is bigger displays it is just 2 columns and in
+* smaller displays three rows have been included, as the image goes to the bottom 
+* while the text stays on top
+***
+*/
 .boxStory {
     font-family: 'Poppins', Arial, Helvetica, sans-serif;
     margin: 4rem 20rem;
@@ -32,11 +41,13 @@
     background-image: url("/resources/aboutus.png");
     background-position: center;
 }
+/*LAPTOPS AND SMALLER MONITORS*/
 @media only screen and (max-width: 1600px){
     .boxStory {
         margin: 4rem 6rem;
     }
 }
+/*TABLET*/
 @media only screen and (max-width: 820px){
     .boxStory {
         margin: 2.5rem;
@@ -45,6 +56,7 @@
         font-size: 3rem;
     }
 }
+/*SMARTPHONES*/
 @media only screen and (max-width: 600px){
     .boxStory {
         grid-template-rows: 4rem 1rem 2fr 1.3fr;

@@ -13,6 +13,8 @@ $(document).ready(function() {
         $("#"+current+" img").css("opacity", "1");
         $("#"+current+" .btn-read-more").css("opacity", "0");
     });
+    //these two next functions handle font-size. Inside the stories, the user can choose
+    //to change to a bigger size to assist with reading.
     $(".sfont").click(function() {
         $(".parag").css("font-size","1rem");
     });

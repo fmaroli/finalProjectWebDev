@@ -1,3 +1,12 @@
+/*
+***
+* CSS for the News page - Flexbox
+***
+* In this page, there will be a major container positioned in the middle of the screen just using automatic margin, and
+* it will work as a flexbox for it's elements.
+* When the screen is smaller, the cards change to 2x2 grids and the layout is changed to better accomodate the images
+***
+*/
 #newsHeader {
     margin: auto;
     width: fit-content;
@@ -79,6 +88,7 @@
     font-size: 0.9rem;
     bottom: 1.25rem;
 }
+/*tables and phones*/
 @media only screen and (max-width: 620px){
     #newsHeader {
         font-size: 2.5rem;

@@ -1,3 +1,11 @@
+/*
+***
+* Story pages
+***
+* Quite a simple page, but my favourite one, it's all centralized by a major container and there are several smaller ones
+* that adjust the text in the layout desired.
+***
+*/
 .wrapperStory {
     padding: 4rem 0 0 0;
     position: relative;
