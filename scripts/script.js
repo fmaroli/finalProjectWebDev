@@ -13,4 +13,10 @@ $(document).ready(function() {
         $("#"+current+" img").css("opacity", "1");
         $("#"+current+" .btn-read-more").css("opacity", "0");
     });
+    $(".sfont").click(function() {
+        $(".parag").css("font-size","1rem");
+    });
+    $(".lfont").click(function() {
+        $(".parag").css("font-size","1.5rem");
+    });
 });

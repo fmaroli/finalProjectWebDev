@@ -30,7 +30,7 @@
     overflow: hidden;
     transition: all .5s;
     cursor: pointer;
-    }
+}
 
 .card-overlay {
     z-index: 20;

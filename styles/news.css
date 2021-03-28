@@ -25,13 +25,31 @@
     border-radius: 0.625rem;
 }
 .newsImage {
-    background-image: url("/resources/news/plant.png");
-    background-position: center;
-
     border-top-left-radius: 0.625rem;
     border-bottom-left-radius: 0.625rem;
     width: 35%;
     height: 100%;
+}
+#firstNews {
+    background-image: url("/resources/news/provence.png");
+    background-position: center;
+}
+#secondNews {
+    background-image: url("/resources/news/fume.png");
+    background-position: center;
+}
+#thirdNews {
+    background-image: url("/resources/news/corktree.png");
+    background-position: center;
+}
+#fourthNews {
+    background-image: url("/resources/news/plant.png");
+    background-position: center;
+}
+#fifthNews {
+    background-image: url("/resources/news/tokaji.jpg");
+    background-size: cover;
+    background-position: center;
 }
 .newsArticle {
     position: absolute;
